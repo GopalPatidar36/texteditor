@@ -1,0 +1,58 @@
+.editor-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-editor {
+  position: relative;
+}
+.custom-editor .ql-editor {
+  height: 100vh;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.custom-toolbar {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.toolBar-btn-main {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.toolbar-btn {
+  border: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline */
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-inline: 18px;
+  border-radius: 5px;
+}
+
+.comment-sidebar {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.display-sidebar {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.text-comment {
+  background-color: white;
+}
