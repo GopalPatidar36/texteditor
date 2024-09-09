@@ -31,15 +31,19 @@ function TextEditor() {
       const quill = quillRef.current.getEditor();
       const bounds = quill.getBounds(range);
       const selected = quill.getText(range.index, range.length);
+      if (selected?.trim()?.length !== 0) {
+        setToolbarPosition({
+          top: bounds.top + 20,
+          left: bounds.left + window.scrollX,
+        });
 
-      setToolbarPosition({
-        top: bounds.top + 20,
-        left: bounds.left + window.scrollX,
-      });
-
-      setSelectedText(selected);
-      setIsSelectedIsBold(quill.getFormat().bold);
-      setShowToolbar(true);
+        setSelectedText(selected);
+        setIsSelectedIsBold(quill.getFormat().bold);
+        setShowToolbar(true);
+      } else {
+        setIsSelectedIsBold(false);
+        setShowToolbar(false);
+      }
     } else {
       setIsSelectedIsBold(false);
       setShowToolbar(false);

@@ -51,8 +51,10 @@
 .display-sidebar {
   background-color: white;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 .text-comment {
   background-color: white;
+  border-radius: 10px;
 }
