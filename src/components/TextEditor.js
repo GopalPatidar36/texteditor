@@ -33,7 +33,7 @@ function TextEditor() {
       const selected = quill.getText(range.index, range.length);
       if (selected?.trim()?.length !== 0) {
         setToolbarPosition({
-          top: bounds.top + 20,
+          top: bounds.bottom + 10,
           left: bounds.left + window.scrollX,
         });
 
